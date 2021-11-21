@@ -61,7 +61,7 @@ def SortingTime():
         PinakamababaSi = PinakamababaSi - SecondSi
 
 
-    print (f"So, from highest to lowest, the arrangement of the list is {PinakamataasSi}, {PangatloSi}, {SecondSi}, {PinakamababaSi}")
+    print (f"So, based on the numbers you entered; from highest to lowest, the arrangement of the list is {PinakamataasSi}, {PangatloSi}, {SecondSi}, {PinakamababaSi}")
 
 
 
