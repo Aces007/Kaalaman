@@ -34,21 +34,45 @@ elif AnoSum2 != PangalawangQuestion:
 
 print (score)    
 
-Pangatlo = random.randint(0,99) 
-Pangapat = random.randint(0,99)
+Fifth = random.randint(0,99) 
+Sixth = random.randint(0,99)
 
 
-print (Pangatlo, Pangapat)
-PangalawangQuestion = int(input("What is the sum of the given numbers?: "))
-AnoSum2 = Pangatlo + Pangapat
-if AnoSum2 == PangalawangQuestion:
+print (Fifth, Sixth)
+PangatlongQuestion = int(input("What is the sum of the given numbers?: "))
+AnoSum3 = Fifth + Sixth
+if AnoSum3 == PangatlongQuestion:
     print ("Correct")
     score = score + 1
-elif AnoSum2 != PangalawangQuestion: 
+elif AnoSum3 != PangatlongQuestion: 
     print ("Unfortunately, you are wrong")
     score = score + 0
 
 print (score)    
+
+
+Seventh = random.randint(0,99) 
+Eighth = random.randint(0,99)
+
+
+print (Seventh, Eighth)
+PangapatQuestion = int(input("What is the sum of the given numbers?: "))
+AnoSum4 = Seventh + Eighth
+if AnoSum4 == PangapatQuestion:
+    print ("Correct")
+    score = score + 1
+elif AnoSum4 != PangapatQuestion: 
+    print ("Unfortunately, you are wrong")
+    score = score + 0
+
+print (score)    
+
+
+
+
+
+
+
 
 
     
