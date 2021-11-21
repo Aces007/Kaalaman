@@ -166,3 +166,39 @@ elif AnoSum10 != IkaSampungTanong:
     score = score + 0
 
 print (score)
+
+
+if score == 10:
+    print ("Excellent Job")
+    print ({score}/10)
+elif score == 9:
+    print ("Very Good")  
+    print ({score}/10)  
+elif score == 8:
+    print ("Good")
+    print ({score}/10)
+elif score == 7:
+    print ("Well Done")     
+    print ({score}/10)
+elif score == 6:
+    print ("Good Effort")   
+    print ({score}/10)
+elif score == 5:
+    print ("Better luck next time")    
+    print ({score}/10)
+elif score == 4:
+    print ("Need More Practice")    
+    print ({score}/10)
+elif score == 3:
+    print ("Need More Practice")    
+    print ({score}/10)
+elif score == 2:
+    print ("Need More Practice")    
+    print ({score}/10)
+elif score == 1:
+    print ("Need More Practice")    
+    print ({score}/10)
+elif score == 0:
+    print ("Consult with your teacher if you need help")    
+    print ({score}/10)               
+    
