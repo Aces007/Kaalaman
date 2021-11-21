@@ -67,17 +67,34 @@ elif AnoSum4 != PangapatQuestion:
 
 print (score)    
 
+Ninth = random.randint(0,99) 
+Tenth = random.randint(0,99)
+
+
+print (Ninth, Tenth)
+PanlimangQuestion = int(input("What is the sum of the given numbers?: "))
+AnoSum5 = Ninth + Tenth
+if AnoSum5 == PanlimangQuestion:
+    print ("Correct")
+    score = score + 1
+elif AnoSum5 != PanlimangQuestion: 
+    print ("Unfortunately, you are wrong")
+    score = score + 0
+
+print (score)
+
+
 Eleventh = random.randint(0,99) 
 Twelfth = random.randint(0,99)
 
 
 print (Eleventh, Twelfth)
-PanlimangQuestion = int(input("What is the sum of the given numbers?: "))
-AnoSum5 = Eleventh + Twelfth
-if AnoSum5 == PanlimangQuestion:
+PanganimNaQuestion = int(input("What is the sum of the given numbers?: "))
+AnoSum6 = Eleventh + Twelfth
+if AnoSum6 == PanganimNaQuestion:
     print ("Correct")
     score = score + 1
-elif AnoSum5 != PanlimangQuestion: 
+elif AnoSum6 != PanganimNaQuestion: 
     print ("Unfortunately, you are wrong")
     score = score + 0
 
@@ -89,11 +106,11 @@ Fourteenth = random.randint(0,99)
 
 print (Thirteenth, Fourteenth)
 PanganimNaQuestion = int(input("What is the sum of the given numbers?: "))
-AnoSum6 = Thirteenth + Fourteenth
-if AnoSum6 == PanganimNaQuestion:
+AnoSum7 = Thirteenth + Fourteenth
+if AnoSum7 == PanganimNaQuestion:
     print ("Correct")
     score = score + 1
-elif AnoSum6 != PanganimNaQuestion: 
+elif AnoSum7 != PanganimNaQuestion: 
     print ("Unfortunately, you are wrong")
     score = score + 0
 
@@ -117,8 +134,25 @@ elif AnoSum7 != PampitongTanong:
 print (score)    
 
 
-Seventeenth = random.randint(0,99) s
+Seventeenth = random.randint(0,99) 
 Eighteenth = random.randint(0,99)
+
+
+print (Seventeenth, Eighteenth)
+PangwalongTanong = int(input("What is the sum of the given numbers?: "))
+AnoSum8 = Seventeenth + Eighteenth
+if AnoSum8 == PangwalongTanong:
+    print ("Correct")
+    score = score + 1
+elif AnoSum8 != PangwalongTanong: 
+    print ("Unfortunately, you are wrong")
+    score = score + 0
+
+print (score)
+
+
+Nineteenth = random.randint(0,99) 
+Twentieth = random.randint(0,99)
 
 
 print (Seventeenth, Eighteenth)
