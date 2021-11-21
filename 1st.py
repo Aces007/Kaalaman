@@ -7,7 +7,8 @@ def PengeNgIyongNumero():
 
 
 def SortingTime():
-    SinoBaPinakaMataas = max (Una, Pangalawa, Pangatlo, Ikaapat)
+    SinoBaPinakaMataas = max(Una, Pangalawa, Pangatlo, Ikaapat)
+
 
     if Pangalawa > Una:
         PinakamababaSi = Una
@@ -47,6 +48,7 @@ def SortingTime():
     else:
         PinakamataasSi = Ikaapat
 
+
     if SecondSi > PangatloSi:
         SecondSi = SecondSi + PangatloSi
         PangatloSi = SecondSi - PangatloSi
@@ -58,8 +60,12 @@ def SortingTime():
         SecondSi = PinakamababaSi - SecondSi
         PinakamababaSi = PinakamababaSi - SecondSi
 
+
     print (f"So, from highest to lowest, the arrangement of the list is {PinakamataasSi}, {PangatloSi}, {SecondSi}, {PinakamababaSi}")
 
 
-    
+
 Una, Pangalawa, Pangatlo, Ikaapat = PengeNgIyongNumero() 
+
+
+PakiArrange = SortingTime()
