@@ -1,14 +1,14 @@
 import random
 
 
-Una = random.randint(0,99) 
-Pangalawa = random.randint(0,99)
+First = random.randint(0,99) 
+Second = random.randint(0,99)
 
 score = 0
 
-print (Una, Pangalawa)
+print (First, Second)
 UnaTanong = int(input("What is the sum of the given numbers?: "))
-AnoSum = Una + Pangalawa
+AnoSum = First + Second
 if AnoSum == UnaTanong:
     print ("Correct")
     score = score + 1
@@ -16,6 +16,22 @@ elif AnoSum != UnaTanong:
     print ("Unfortunately, you are wrong")
     score = score = 0
     
+print (score)    
+
+Third = random.randint(0,99) 
+Fourth = random.randint(0,99)
+
+
+print (Third, Fourth)
+PangalawangQuestion = int(input("What is the sum of the given numbers?: "))
+AnoSum2 = Third + Fourth
+if AnoSum2 == PangalawangQuestion:
+    print ("Correct")
+    score = score + 1
+elif AnoSum2 != PangalawangQuestion: 
+    print ("Unfortunately, you are wrong")
+    score = score + 0
+
 print (score)    
 
 Pangatlo = random.randint(0,99) 
@@ -33,4 +49,6 @@ elif AnoSum2 != PangalawangQuestion:
     score = score + 0
 
 print (score)    
+
+
     
