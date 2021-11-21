@@ -1,27 +1,65 @@
-IlistaNyoPo = int
-Listahan = []
+def PengeNgIyongNumero():
+    NumeroUno = int(input("Enter the first number you wish to sort: "))
+    NumeroDos = int(input("Enter the second number you wish to sort: "))
+    NumeroTres = int(input("Enter the third number you wish to sort: "))
+    NumeroKwatro = int(input("Enter the fourth number you wish to sort: "))
+    return NumeroUno, NumeroDos, NumeroTres, NumeroKwatro
 
 
-Ilista = True
+def SortingTime():
+    SinoBaPinakaMataas = max (Una, Pangalawa, Pangatlo, Ikaapat)
 
-while Ilista:
-    IlistaMoLahatNgNumeroMo = input("Enter the values you wish to sort: ")
-    Listahan.append(IlistaMoLahatNgNumeroMo)
-    if IlistaMoLahatNgNumeroMo == ("TaposNa"):
-        break
+    if Pangalawa > Una:
+        PinakamababaSi = Una
+        SecondSi = Pangalawa
     else:
-        print ("Then")
-
-print ("The unsorted lements are: ", Listahan)
-
-i = 0
-
-for i in range(i,len(Listahan)):
-    for j in range(i+1, len(Listahan)):
-        if Listahan[i] > Listahan[j]:
-            temp = Listahan[i]
-            Listahan[i] < Listahan[j]
-            Listahan[j] = temp
+        PinakamababaSi = Pangalawa
+        SecondSi = Una
 
 
-print ("The sorted elements are:", Listahan)
+    if Pangatlo < Pangalawa:
+        PangatloSi = SecondSi
+        SecondSi = PinakamababaSi
+        PinakamababaSi = Pangatlo
+
+    else:
+        PangatloSi = Pangatlo
+
+    
+    if SecondSi > PangatloSi:
+        SecondSi = SecondSi + PangatloSi
+        PangatloSi = SecondSi - PangatloSi
+        SecondSi = SecondSi - PangatloSi
+
+
+    if PinakamababaSi > SecondSi:
+        PinakamababaSi = PinakamababaSi + SecondSi
+        SecondSi = PinakamababaSi - SecondSi
+        PinakamababaSi = PinakamababaSi - SecondSi
+
+
+    if Ikaapat < PangatloSi:
+        PinakamataasSi = PangatloSi
+        PangatloSi = SecondSi
+        SecondSi = PinakamababaSi
+        PinakamababaSi = Ikaapat
+
+    else:
+        PinakamataasSi = Ikaapat
+
+    if SecondSi > PangatloSi:
+        SecondSi = SecondSi + PangatloSi
+        PangatloSi = SecondSi - PangatloSi
+        SecondSi = SecondSi - PangatloSi
+
+
+    if PinakamababaSi > SecondSi:
+        PinakamababaSi = PinakamababaSi + SecondSi
+        SecondSi = PinakamababaSi - SecondSi
+        PinakamababaSi = PinakamababaSi - SecondSi
+
+    print (f"So, from highest to lowest, the arrangement of the list is {PinakamataasSi}, {PangatloSi}, {SecondSi}, {PinakamababaSi}")
+
+
+    
+Una, Pangalawa, Pangatlo, Ikaapat = PengeNgIyongNumero() 
