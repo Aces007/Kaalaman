@@ -13,56 +13,34 @@ def SortingTime():
     SinoBaPinakaMataas = max(Una, Pangalawa, Pangatlo, Ikaapat)
 
     # This if/else statement will verify if your second no. is greater than the first. But if "not"
-    if Pangalawa > Una:
+    if Pangalawa >= Una:
         PinakamababaSi = Una
         SecondSi = Pangalawa
     # This else statement will execute the opposite value that did not became True on the if statement.    
-    else:
+    elif Pangalawa <= Una:
         PinakamababaSi = Pangalawa
         SecondSi = Una
 
     # This time, this if statement will now verify if your third no. is less than your second no. it will examine the "trueness" of 
     # the condition. but if that is not the case then:    
-    if Pangatlo < Pangalawa:
+    if Pangatlo <= Pangalawa:
         PangatloSi = SecondSi
         SecondSi = PinakamababaSi
         PinakamababaSi = Pangatlo
     # This else statement will now execute the condition if thirdno<secondno is not "True".
-    else:
+    elif Pangatlo >= Pangalawa:
         PangatloSi = Pangatlo
-
-    # This to check prevent contingency will then rescan the values along 
-    if SecondSi > PangatloSi:
-        SecondSi = SecondSi + PangatloSi
-        PangatloSi = SecondSi - PangatloSi
-        SecondSi = SecondSi - PangatloSi
-    # with this elif statement below it, as an evaluation before moving on to the next if statement.
-    elif PinakamababaSi > SecondSi:
-        PinakamababaSi = PinakamababaSi + SecondSi
-        SecondSi = PinakamababaSi - SecondSi
-        PinakamababaSi = PinakamababaSi - SecondSi
 
     # Speaking of, this if statement then will go for the fourth value of the numbers you entered, it will verify if your fourth
     # number is lower than the third lowest number in the evaluated values.
-    if Ikaapat < PangatloSi:
+    if Ikaapat <= PangatloSi:
         PinakamataasSi = PangatloSi
         PangatloSi = SecondSi
         SecondSi = PinakamababaSi
         PinakamababaSi = Ikaapat
     # If not, then your fourth number will be the highest of all the numbers.
-    else:
+    elif Ikaapat >= PangatloSi:
         PinakamataasSi = Ikaapat
-
-    # like the if/elif statement above will rescan the final values in order to have an efficient run in sorting the values.
-    if SecondSi > PangatloSi:
-        SecondSi = SecondSi + PangatloSi
-        PangatloSi = SecondSi - PangatloSi
-        SecondSi = SecondSi - PangatloSi
-
-    elif PinakamababaSi > SecondSi:
-        PinakamababaSi = PinakamababaSi + SecondSi
-        SecondSi = PinakamababaSi - SecondSi
-        PinakamababaSi = PinakamababaSi - SecondSi
 
     # For the final stage, to present, this print function will then show you the sorted numbers you want.  
     print (f"So, based on the numbers you entered; from highest to lowest, the arrangement of the list is {PinakamataasSi}, {PangatloSi}, {SecondSi}, {PinakamababaSi}")
