@@ -6,35 +6,31 @@ Pangalawa = random.randint(0,99)
 
 score = 0
 
-def UnangTanong():
-    print (Una, Pangalawa)
-    UnaTanong = int(input("What is the sum of the given numbers?: "))
-    AnoSum = Una + Pangalawa
-    if AnoSum == UnaTanong:
-        print ("Correct")
-        print (score + 1)
-    elif AnoSum != UnaTanong: 
-        print ("Unfortunately, you are wrong")
-        print (score)
-    return UnaTanong, print (AnoSum)
+print (Una, Pangalawa)
+UnaTanong = int(input("What is the sum of the given numbers?: "))
+AnoSum = Una + Pangalawa
+if AnoSum == UnaTanong:
+    print ("Correct")
+    score = score + 1
+elif AnoSum != UnaTanong: 
+    print ("Unfortunately, you are wrong")
+    score = score = 0
+    
+print (score)    
 
 Pangatlo = random.randint(0,99) 
 Pangapat = random.randint(0,99)
 
-def PangalawangTanong():
-    print (Pangatlo, Pangapat)
-    PangalawangQuestion = int(input("What is the sum of the given numbers?: "))
-    AnoSum = Pangatlo + Pangapat
-    if AnoSum == PangalawangQuestion:
-        print ("Correct")
-        print (score + 2)
-    elif AnoSum != PangalawangQuestion: 
-        print ("Unfortunately, you are wrong")
-        print (score)
-    return PangalawangQuestion, print (AnoSum)
 
+print (Pangatlo, Pangapat)
+PangalawangQuestion = int(input("What is the sum of the given numbers?: "))
+AnoSum2 = Pangatlo + Pangapat
+if AnoSum2 == PangalawangQuestion:
+    print ("Correct")
+    score = score + 1
+elif AnoSum2 != PangalawangQuestion: 
+    print ("Unfortunately, you are wrong")
+    score = score + 0
 
-
-
-PakitaFirst = UnangTanong()    
-PakitaSecond = PangalawangTanong()
+print (score)    
+    
