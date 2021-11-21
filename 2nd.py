@@ -139,12 +139,12 @@ Eighteenth = random.randint(0,99)
 
 
 print (Seventeenth, Eighteenth)
-PangwalongTanong = int(input("What is the sum of the given numbers?: "))
-AnoSum8 = Seventeenth + Eighteenth
-if AnoSum8 == PangwalongTanong:
+PangsiyamNaTanong = int(input("What is the sum of the given numbers?: "))
+AnoSum9 = Seventeenth + Eighteenth
+if AnoSum9 == PangsiyamNaTanong:
     print ("Correct")
     score = score + 1
-elif AnoSum8 != PangwalongTanong: 
+elif AnoSum9 != PangsiyamNaTanong: 
     print ("Unfortunately, you are wrong")
     score = score + 0
 
@@ -156,12 +156,12 @@ Twentieth = random.randint(0,99)
 
 
 print (Seventeenth, Eighteenth)
-PangwalongTanong = int(input("What is the sum of the given numbers?: "))
-AnoSum8 = Seventeenth + Eighteenth
-if AnoSum8 == PangwalongTanong:
+IkaSampungTanong = int(input("What is the sum of the given numbers?: "))
+AnoSum10 = Seventeenth + Eighteenth
+if AnoSum10 == IkaSampungTanong:
     print ("Correct")
     score = score + 1
-elif AnoSum8 != PangwalongTanong: 
+elif AnoSum10 != IkaSampungTanong: 
     print ("Unfortunately, you are wrong")
     score = score + 0
 
