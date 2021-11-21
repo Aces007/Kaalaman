@@ -1,11 +1,15 @@
 import random
 
-
+# To initialize the game, my program will randomly generate a couple of numbers, which will be used for you to calculate.
 First = random.randint(0,99) 
 Second = random.randint(0,99)
 
+
+# This records your score, it will define your skill at the end of the game. 
 score = 0
 
+
+# Now, the game begins, the program will generate the numbers for the 10 items, do your best and Goodluck! 
 print (First, Second)
 UnaTanong = int(input("What is the sum of the given numbers?: "))
 AnoSum = First + Second
@@ -168,6 +172,7 @@ elif AnoSum10 != IkaSampungTanong:
 print (score)
 
 
+# After you have completed the game, the program will commend you for your efforts, if you failed "practice makes perfect".
 if score == 10:
     print ("Excellent Job")
     print ({score}/10)
