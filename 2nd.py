@@ -105,12 +105,12 @@ Fourteenth = random.randint(0,99)
 
 
 print (Thirteenth, Fourteenth)
-PanganimNaQuestion = int(input("What is the sum of the given numbers?: "))
+PampitongTanong = int(input("What is the sum of the given numbers?: "))
 AnoSum7 = Thirteenth + Fourteenth
-if AnoSum7 == PanganimNaQuestion:
+if AnoSum7 == PampitongTanong:
     print ("Correct")
     score = score + 1
-elif AnoSum7 != PanganimNaQuestion: 
+elif AnoSum7 != PampitongTanong: 
     print ("Unfortunately, you are wrong")
     score = score + 0
 
@@ -122,12 +122,12 @@ Sixteenth = random.randint(0,99)
 
 
 print (Fifteenth, Sixteenth)
-PampitongTanong = int(input("What is the sum of the given numbers?: "))
-AnoSum7 = Fifteenth + Sixteenth
-if AnoSum7 == PampitongTanong:
+PangwalongTanong = int(input("What is the sum of the given numbers?: "))
+AnoSum8 = Fifteenth + Sixteenth
+if AnoSum8 == PangwalongTanong:
     print ("Correct")
     score = score + 1
-elif AnoSum7 != PampitongTanong: 
+elif AnoSum8 != PangwalongTanong: 
     print ("Unfortunately, you are wrong")
     score = score + 0
 
