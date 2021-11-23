@@ -8,6 +8,8 @@ def PakilagayPoNgInyongNumbers():
 
 # 2nd Step: This line here calls the returned values of the user input above, this is necessary in transferring your input values to the conditionals.
 First, Second, Third, Fourth = PakilagayPoNgInyongNumbers() 
+print (f"This is what we receieved from you, {First}, {Second}, {Third}, {Fourth}")
+print ("We will just need a moment of your time...")
 
 # 3rd Step: These conditionals are responsible for sorting the numbers from highest to lowest. They will be the one to do the job.
 if Fourth <= Third:
@@ -26,10 +28,10 @@ if Second <= ThirdPlacerSi:
 elif Second >= ThirdPlacerSi:
     SecondPlacerSi = Second
 
-if Fourth >= SecondPlacerSi:
+if First >= SecondPlacerSi:
     WinnerSi = First
 
-elif Fourth <= SecondPlacerSi:
+elif First <= SecondPlacerSi:
     WinnerSi = SecondPlacerSi
     SecondPlacerSi = ThirdPlacerSi
     ThirdPlacerSi = LastPlaceSi
